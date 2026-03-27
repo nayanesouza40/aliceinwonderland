@@ -47,7 +47,7 @@ const Intro = ({onNext, onPrev, goToChapter}) => {
       <Navigation 
         onPrev={onPrev} 
         onNext={onNext} />
-      <Header title={"Through code"} goToChapter={goToChapter} chapterIndex={3}/>
+      <Header title={"Through code"} goToChapter={goToChapter} chapterIndex={2}/>
     </div>
   );
 };

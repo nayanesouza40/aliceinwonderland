@@ -28,7 +28,7 @@ const Header = ({ chapterIndex, bookId, title, goToChapter, alwaysVisible = fals
     const lastTap = useRef(0);
 
     const chapters = bookId === 1 ? chapters_in_wonderland : [];
-    const adicionarTitulo = () => chapters[chapterIndex]?.title || title;
+    const adicionarTitulo = () => chapters[chapterIndex-2]?.title || title;
 
     // --- HANDLERS (CONTROLES) ---
 

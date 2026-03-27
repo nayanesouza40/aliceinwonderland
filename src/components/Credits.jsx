@@ -66,7 +66,7 @@ const Credits = ({onNext, onPrev, goToChapter}) => {
     <Navigation 
       onPrev={onPrev} 
       onNext={onNext}/>
-    <Header title={chapterTitle} goToChapter={goToChapter} chapterIndex={2} alwaysVisible={true}/>
+    <Header goToChapter={goToChapter} chapterIndex={16} alwaysVisible={true}/>
   </div>
   );
 };

@@ -29,21 +29,20 @@ const SummarySuspended = ({ isOpen, onClose, goToChapter, chapterIndex }) => {
             <button onClick={() => { goToChapter(1); onClose(); }}>Title Page</button>
           </li>
 
-           <li className={chapterIndex === 2 ? 'active-item' : ''}>
-            <button onClick={() => { goToChapter(2); onClose(); }}>Credits</button>
-          </li>
+           
          
-          <li className={chapterIndex === 3 ? 'active-item' : ''}>
-            <button onClick={() => { goToChapter(3); onClose(); }}>Introduction</button>
+          <li className={chapterIndex === 2 ? 'active-item' : ''}>
+            <button onClick={() => { goToChapter(2); onClose(); }}>Introduction</button>
           </li>
-          
 
-          <hr />
+          <li>
+            <button>ALICE IN WONDERLAND</button>
+          </li>
+            
 
-          {/* --- CAPÍTULOS DINÂMICOS --- */}
+
           {chaptersEntries.map(([key, chapterData]) => {
-            // Se key é "1", targetPage é 4. Se key é "8", targetPage é 11.
-            const targetPage = Number(key) + 3;
+            const targetPage = Number(key) + 2;
             const isActive = Number(chapterIndex) === targetPage;
 
             return (
@@ -54,7 +53,7 @@ const SummarySuspended = ({ isOpen, onClose, goToChapter, chapterIndex }) => {
                     onClose();
                   }}
                 >
-                  {chapterData.title}
+                  <strong>{key}</strong>{chapterData.title}
                 </button>
               </li>
             );
@@ -63,8 +62,12 @@ const SummarySuspended = ({ isOpen, onClose, goToChapter, chapterIndex }) => {
           <hr />
 
           {/* --- PÁGINAS FIXAS FINAIS --- */}
-          <li className={chapterIndex === 16 ? 'active-item' : ''}>
+          <li className={chapterIndex === 15 ? 'active-item' : ''}>
             <button onClick={() => { goToChapter(16); onClose(); }}>Afterword</button>
+          </li>
+
+          <li className={chapterIndex === 16 ? 'active-item' : ''}>
+            <button onClick={() => { goToChapter(16); onClose(); }}>Credits</button>
           </li>
          
         </ul>

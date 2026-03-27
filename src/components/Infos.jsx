@@ -2,8 +2,6 @@ import Navigation from './Navigation';
 import book_infos from '../control/meta_tags';
 import chapters_in_wonderland from '../control/chapters_in_wonderland';
 import Header from '../components/Header';
-import menuCoracao from "../assets/imgs/8.svg";
-import house from "../assets/imgs/1.svg";
 
 const { 
   title: titulo, 
@@ -29,12 +27,17 @@ return (
     <div>
             <p className="original_author">LEWIS CARROLL</p>
 
-      <p className="info-titulo">Alice's Adventures in Wonderland</p>
+      <p className="info-titulo">Alice in Wonderland</p>
 
+      
+
+      
+    </div>
+
+    <div>
       <p className="project_subtitle">
         A Reflowable Edition
       </p>
-
       <p className="epigraph">
         “Curiouser and curiouser!”
       </p>
@@ -42,8 +45,7 @@ return (
 
     <div>
       <p className="front_footer">
-      <strong>NAYANE DE SOUZA</strong><br/>
-      Produção Editorial<br/>
+      
       Rio de Janeiro, 2026
     </p>
     </div>

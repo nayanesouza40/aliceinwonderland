@@ -60,14 +60,13 @@ const Chapter = ({bookId, chapterNumber, onNext, onPrev, goToChapter}) => {
         onPrev={onPrev} 
         onNext={onNext}/>
       <Footer />
-      <Header goToChapter={goToChapter} chapterIndex={chapterNumber+3} bookId={bookId} title={chapters[0].title}/>
+      <Header goToChapter={goToChapter} chapterIndex={chapterNumber+2} bookId={bookId} title={chapters[0].title}/>
       
       <div>
         <div className="chapter_head">
         <span className="chapter_abrt">Capítulo {chapterNumber}</span>
         
         
-        {/* <img className="chapter_img_abertura" src={image} alt="" loading="lazy" /> */}
 
       </div>
 

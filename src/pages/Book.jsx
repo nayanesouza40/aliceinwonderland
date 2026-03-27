@@ -58,66 +58,69 @@ const goToChapter = (chapterIndex) => {
       onPrev={() => setCurrentPageAndSave(0)} 
       onNext={() => setCurrentPageAndSave(2)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
-    <Credits //2 
-      onPrev={() => setCurrentPageAndSave(1)}
-      onNext={() => setCurrentPageAndSave(3)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
     <Intro //2
-      onPrev={() => setCurrentPageAndSave(2)} 
-      onNext={() => setCurrentPageAndSave(4)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
+      onPrev={() => setCurrentPageAndSave(1)} 
+      onNext={() => setCurrentPageAndSave(3)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
     <Chapter1 //4
+      onPrev={() => setCurrentPageAndSave(2)} 
+      onNext={() => setCurrentPageAndSave(4)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
+
+    <Chapter2 //5
       onPrev={() => setCurrentPageAndSave(3)} 
       onNext={() => setCurrentPageAndSave(5)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
-    <Chapter2 //5
-      onPrev={() => setCurrentPageAndSave(4)} 
-      onNext={() => setCurrentPageAndSave(6)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
-
     <Chapter3 //6
-      onPrev={() => setCurrentPageAndSave(5)} 
-      onNext={() => setCurrentPageAndSave(7)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
+      onPrev={() => setCurrentPageAndSave(4)} 
+      onNext={() => setCurrentPageAndSave(6)} goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
     <Chapter4 //7
+      onPrev={() => setCurrentPageAndSave(5)} 
+      onNext={() => setCurrentPageAndSave(7)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
+
+    <Chapter5 //8
       onPrev={() => setCurrentPageAndSave(6)} 
       onNext={() => setCurrentPageAndSave(8)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
-    <Chapter5 //8
-      onPrev={() => setCurrentPageAndSave(7)} 
+    <Chapter6 //9
+      onPrev={() => setCurrentPageAndSave(7)}  
       onNext={() => setCurrentPageAndSave(9)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
-    <Chapter6 //9
-      onPrev={() => setCurrentPageAndSave(8)}  
-      onNext={() => setCurrentPageAndSave(10)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
-
     <Chapter7 //10
-      onPrev={() => setCurrentPageAndSave(9)} 
-      onNext={() => setCurrentPageAndSave(11)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
+      onPrev={() => setCurrentPageAndSave(8)} 
+      onNext={() => setCurrentPageAndSave(10)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
 
     <Chapter8 //11
-      onPrev={() => setCurrentPageAndSave(10)}  
-      onNext={() => setCurrentPageAndSave(12)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
+      onPrev={() => setCurrentPageAndSave(9)}  
+      onNext={() => setCurrentPageAndSave(11)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
     <Chapter9 //12
-      onPrev={() => setCurrentPageAndSave(11)} 
-      onNext={() => setCurrentPageAndSave(13)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
+      onPrev={() => setCurrentPageAndSave(10)} 
+      onNext={() => setCurrentPageAndSave(12)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
 
     <Chapter10 //13
-      onPrev={() => setCurrentPageAndSave(12)} 
-      onNext={() => setCurrentPageAndSave(14)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
+      onPrev={() => setCurrentPageAndSave(11)} 
+      onNext={() => setCurrentPageAndSave(13)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
 
     <Chapter11 //14
-      onPrev={() => setCurrentPageAndSave(13)} 
-      onNext={() => setCurrentPageAndSave(15)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
+      onPrev={() => setCurrentPageAndSave(12)} 
+      onNext={() => setCurrentPageAndSave(14)}goToChapter={goToChapter}chapterIndex={currentPage}/>,
     
     <Chapter12 //15
-      onPrev={() => setCurrentPageAndSave(14)} 
-      onNext={() => setCurrentPageAndSave(16)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
+      onPrev={() => setCurrentPageAndSave(13)} 
+      onNext={() => setCurrentPageAndSave(15)}goToChapter={goToChapter}chapterIndex={currentPage}/>, 
 
     <Afterword //16
-      onPrev={() => setCurrentPageAndSave(15)} chapterIndex={currentPage}
-     goToChapter={goToChapter}/>
+      onPrev={() => setCurrentPageAndSave(14)} 
+      onNext={() => setCurrentPageAndSave(16)}
+      chapterIndex={currentPage}
+     goToChapter={goToChapter}/>,
     
+     
+    <Credits //2 
+      onPrev={() => setCurrentPageAndSave(15)}
+    goToChapter={goToChapter}chapterIndex={currentPage}/>
     
       
   ];
